@@ -1,6 +1,6 @@
 <template>
 	<header class="flex items-center justify-between h-20 px-[5%] lg:px-[15%]">
-		<NuxtLink to="/" class="font-bold text-2xl lg:text-4xl">
+		<NuxtLink to="/" class="font-bold text-2xl lg:text-4xl font-kh uppercase">
 			<span class="text-primary">B</span>egoingto
 		</NuxtLink>
 		<nav class="flex items-center space-x-7 text-gray-600">
