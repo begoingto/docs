@@ -31,7 +31,7 @@
 			link: "/",
 		},
 		{
-			name: "រៀន",
+			name: "មេរៀន",
 			icon: "et:book-open",
 			link: "/learning",
 		},

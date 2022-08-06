@@ -59,6 +59,6 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
   return fetchContentNavigation(queryContent("learning"));
 });
 useHead({
-  title: "សូមស្វាគមន៍មកាន់វេបសាយ ប៊ីហ្គូអុីងធូ",
+  title: "សូមស្វាគមន៍មកាន់វេបសាយ ប៊ីហ្គូអុីងធូ ចែករំលែក-មេរៀន-ស្រាវជ្រាវ-និងចំណេះដឹងថ្មីៗ",
 });
 </script>
