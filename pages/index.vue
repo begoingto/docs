@@ -2,7 +2,9 @@
   <main class="min-h-screen">
     <Navbar />
     <section class="lg:px-[15%] px-[5%] pt-20">
-      <h1 class="lg:text-5xl text-2xl leading-normal font-semibold text-center font-kh">
+      <h1
+        class="lg:text-5xl text-2xl leading-normal font-semibold text-center font-kh"
+      >
         សូមស្វាគមន៍មកាន់វេបសាយ ប៊ីហ្គូអុីងធូ
       </h1>
       <h1
@@ -59,6 +61,6 @@ const { data: blogNav } = await useAsyncData("navigation", () => {
   return fetchContentNavigation(queryContent("learning"));
 });
 useHead({
-  title: "សូមស្វាគមន៍មកាន់វេបសាយ ប៊ីហ្គូអុីងធូ ចែករំលែក-មេរៀន-ស្រាវជ្រាវ-និងចំណេះដឹងថ្មីៗ",
+  title: "សូមស្វាគមន៍មកាន់វេបសាយ ប៊ីហ្គូអុីងធូ ចែករំលែក-មេរៀន-ស្រាវជ្រាវ-និងចំណេះដឹងថ្មីៗ"
 });
 </script>
