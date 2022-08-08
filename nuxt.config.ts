@@ -1,12 +1,11 @@
 import { defineNuxtConfig } from "nuxt";
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   head({ $seo }) {
     return $seo({
       openGraph: {
         image: {
-          url: "https://www.begoingto.me/og-image.jpg",
+          url: "https://www.begoingto.me/preview.jpg",
           alt: "ប៊ីហ្គូអុីងធូ",
         },
       },

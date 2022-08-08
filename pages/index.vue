@@ -73,7 +73,7 @@ useHead({
         keywords: 'be-going-to, be going to, begoingto, begoingto.me, ប៊ីហ្គូអុីងធូ-begoingto, begoingto me',
         openGraph: {
           image: {
-            url: "https://www.begoingto.me/og-image.jpg",
+            url: "https://www.begoingto.me/preview.jpg",
             alt: "ប៊ីហ្គូអុីងធូ",
           },
           twitter: {
