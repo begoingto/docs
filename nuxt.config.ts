@@ -1,15 +1,21 @@
 import { defineNuxtConfig } from "nuxt";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  head({ $seo }) {
-    return $seo({
-      openGraph: {
-        image: {
-          url: "https://www.begoingto.me/preview.jpg",
-          alt: "ប៊ីហ្គូអុីងធូ",
-        },
-      },
-    });
+  app: {
+    head: {
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { property: 'og:image', content: 'https://www.begoingto.me/preview.jpg' },
+        { property: 'twitter:image', content: 'https://www.begoingto.me/preview.jpg' },
+      ],
+      link: [
+        { rel:'manifest', href: 'https://www.begoingto.me/manifest.json' }
+      ],
+      
+      noscript: [
+        { children: 'Javascript is required' }
+      ]
+    }
   },
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "nuxt-seo"],
   seo: {
@@ -23,6 +29,10 @@ export default defineNuxtConfig({
     isForcedTrailingSlash: false,
 	  author: 'Begoingto Me',
     openGraph: {
+      image: {
+        url: "https://www.begoingto.me/preview.jpg",
+        alt: "ប៊ីហ្គូអុីងធូ",
+      },
       twitter: {
         site: "@begoingtoMe",
         creator: "@begoingtoMe",
@@ -32,9 +42,9 @@ export default defineNuxtConfig({
         description:
           "សូមស្វាគមន៍មកាន់វេបសាយ ប៊ីហ្គូអុីងធូ ចែករំលែក-មេរៀន-ស្រាវជ្រាវ-និងចំណេះដឹងថ្មីៗ ជាការជួយលើស្ទួយដល់ភាសាជាតិយើងបានបញ្ចូលអត្ថបទជាភាសាខ្មែរ ដើម្បីឲ្យយុវជន ក្មេងៗ សិស្សានុសិស្ស ប្អូនៗ ដែលខ្សោយខាងផ្នែកភាសាអង់គ្លេសងាយយល់ និងផ្ដល់ជាគ្រឹះមូលដ្ឋាន។",
       },
-	  facebook: {
-      appId: '1059423371454203',
-      pageId: '273531340257037' 
+      facebook: {
+        appId: '1059423371454203',
+        pageId: '273531340257037' 
       },
     },
   },
